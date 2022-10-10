@@ -1,7 +1,7 @@
 #variabel
 a = "Enggar Lanang Nandhito Agil Ghibran"
 def func():
-    a = "any"
+    #a = "any"
     print ("Selamat " + a)
 func()
 print (a)
@@ -17,7 +17,7 @@ tambah()
 
 #definisi parameter
 def data(nama,nim):
-    print(f"Nama Saya {nama} dan {nim}")
+    print(f"Nama Saya {nama} dengan NIM {nim}")
 data("Enggar LNAG","20200801076")
 
 #contoh 
