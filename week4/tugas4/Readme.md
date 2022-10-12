@@ -1,8 +1,10 @@
 # Tugas 4 - Rangkuman
 
-NIM : 20200801076
-Nama : Enggar Lanang Nandhito Agil Ghibran
-Matkul : Bahasa Pemrograman
+NIM : 20200801076 .
+
+Nama : Enggar Lanang Nandhito Agil Ghibran.
+
+Matkul : Bahasa Pemrograman.
 
 # Statement Kondisi
 
@@ -40,5 +42,5 @@ Kapan Penggunaan IF dan Switch
 IF digunakan apabila seleksi memiliki lebih dari 1 kondisi dan nilai.
 SWITCH digunakan apabila hanya ada 1 kondisi dengan nilai yang bervariasi.
 
-\*Contoh masing-masing kondisi dapat dilihat pada program python didalam folder ini
-\*Python core tidak menyediakan “switch” atau “case” seperti bahasa pemrograman lain. Tapi kita bisa menggunakan statemen if, elif yang bisa menggantikan “switch” atau “case". jadi belum ada contoh switch case yang bisa saya berikan dalam bahasa python
+\*Contoh masing-masing kondisi dapat dilihat pada program python didalam folder ini.
+\*Python core tidak menyediakan “switch” atau “case” seperti bahasa pemrograman lain. Tapi kita bisa menggunakan statemen if, elif yang bisa menggantikan “switch” atau “case". jadi belum ada contoh switch case yang bisa saya berikan dalam bahasa python.
