@@ -14,113 +14,107 @@ Berikut adalah tipe data dari bahasa pemrograman Python :
 
 1. tipe data Boolean
    Tipe data boolean adalah tipe data yang hanya memiliki 2 nilai yaitu True dan False. Biasa digunakan dalam kebutuhan conditional programming.
-   contoh:
+   contoh :
+   print(True)
 
-print(True)
+   i = True
+   print (type(i))
+   .
 
-i = True
-print (type(i)) 2. tipe data String
-Tipe data string berfungsi untuk menyatakan huruf / kalimat yang berupa angka, tulisan atau pun karakter khusus. Pendeklarasian variable untuk tipe string diapit oleh " atau '.
-contoh:
+2. tipe data String
+   Tipe data string berfungsi untuk menyatakan huruf / kalimat yang berupa angka, tulisan atau pun karakter khusus. Pendeklarasian variable untuk tipe string diapit oleh " atau '.
+   contoh :
+   print("Hello World dengan Python")
+   print('Ini bahasa Python')
 
-print("Hello World dengan Python")
-print('Ini bahasa Python')
+   a = "hello world"
+   print (a)
+   print (type(a))
+   .
 
-a = "hello world"
-print (a)
-print (type(a)) 3. tipe data Integer
-Tipe data integer berfungsi untuk menyatakan angka bilangan bulat. Berbeda dengan tipe string, tipe data tipe integer dapat diaplikasikan pada operasi matematika.
+3. tipe data Integer
+   Tipe data integer berfungsi untuk menyatakan angka bilangan bulat. Berbeda dengan tipe string, tipe data tipe integer dapat diaplikasikan pada operasi matematika.
+   contoh integer :
+   b = 90
+   print (b)
+   print (type(b))
 
-contoh integer
+   print (2022)
+   .
 
-b = 90
-print (b)
-print (type(b))
+4. tipe data Float
+   Tipe data float berfungsi untuk menyatakan angka bilangan desimal.
+   contoh float :
+   c = 10.5
+   print (c)
+   print (type(c))
 
-print (2022) 4. tipe data Float
-Tipe data float berfungsi untuk menyatakan angka bilangan desimal.
-
-contoh float
-
-c = 10.5
-print (c)
-print (type(c))
-
-print (3.14)
+   print (3.14)
+   .
 
 5. tipe data Hexadecimal
    Tipe data hexadecimal berfungsi untuk sistem bilangan basis 16 , sebuah sistem bilangan yang menggunakan 16 simbol dengan urutan angka sebagai berikut 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
-
-print(9a)
-
+   print(9a)
+   .
 6. tipe data Complex
    Tipe data complex berfungsi untuk menyatakan angka real dan imajiner. Bilangan imajiner adalah bilangan yang diperoleh dari akar bilangan rasional negatif.
+   contoh data complex :
+   e = 1j
+   print (e)
+   print (type(e))
 
-contoh data complex
-
-e = 1j
-print (e)
-print (type(e))
-z = complex ('5-9j')
-
-print (z)
-print(5j)
+   z = complex ('5-9j')
+   print (z)
+   print(5j)
 
 7. tipe data List
    Tipe data list adalah sebuah urutan (sequence) dari kumpulan data yang dapat diubah - ubah (Flexibel). Data list dapat didefinisikan dengan [] atau list().
+   contoh type data list :
+   f = ["a","b","c"]
+   print (f)
+   print (type(f))
 
-contoh type data list
+   list_f = [1,2,3]
+   print (list_f[0])
 
-f = ["a","b","c"]
-print (f)
-print (type(f))
-
-list_f = [1,2,3]
-print (list_f[0])
-
-print([1,2,3,4,5])
-print(["satu", "dua", "tiga"])
+   print([1,2,3,4,5])
+   print(["satu", "dua", "tiga"])
 
 8. tipe data Tuple
    Tipe data tupple adalah sebuah urutan (sequence) untuk menyimpan beberapa data yang tidak dapat diubah - ubah (Fixed). Data tupple dapat didefinisikan dengan () atau tuple().
+   contoh tuple :
+   d = 20,5
+   print (d)
+   print (type(d))
 
-contoh tuple
+   tuple_f = 1,2,3
+   print (tuple_f[0])
 
-d = 20,5
-print (d)
-print (type(d))
-
-tuple_f = 1,2,3
-print (tuple_f[0])
-
-print((1,2,3,4,5))
-print(("satu", "dua", "tiga"))
+   print((1,2,3,4,5))
+   print(("satu", "dua", "tiga"))
 
 9. Tipe data set
    Tipe data set adalah tipe data yang terdiri dari kelompok data yang sama (uniqe). Sehingga data yang ada didalamnya tidak boleh ada yang sama. Jika ada yang sama maka akan melebur menjadi satu.
+   contoh type data set :
+   g = {"a","b","c"}
+   print (g)
+   print (type(g))
 
-contoh type data set
+   contoh set :
+   set_f = {1,2,3}
+   print (set_f)
 
-g = {"a","b","c"}
-print (g)
-print (type(g))
-
-contoh set
-
-set_f = {1,2,3}
-print (set_f)
-
-type data frozenset berfungsi untuk mengubah iterable menjadi objek set yang tidak bisa diubah (immutable). Frozenset adalah versi immutable dari set
-
-h = frozenset({1,2,3})
-print (type(h))
+   type data frozenset berfungsi untuk mengubah iterable menjadi objek set yang tidak bisa diubah (immutable). Frozenset adalah versi immutable dari set
+   h = frozenset({1,2,3})
+   print (type(h))
 
 10. tipe data Dictionary
     Tipe data dictionary adalah jenis array untuk menyimpan beberapa pasang data yang memiliki “key” untuk penunjuk value.
     print({"nama":"Budi", 'umur':20})
 
-tipe data Dictionary dimasukan ke dalam variabel biodata
+    tipe data Dictionary dimasukan ke dalam variabel biodata
 
-biodata = {"nama":"Andi", 'umur':21} #proses inisialisasi variabel biodata
-print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary
-print(type(biodata)) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe data dictionary
+    biodata = {"nama":"Andi", 'umur':21} #proses inisialisasi variabel biodata
+    print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary
+    print(type(biodata)) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe
+    data dictionary
