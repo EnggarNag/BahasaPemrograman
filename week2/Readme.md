@@ -21,11 +21,11 @@ kita bisa memperbarui ke versi Windows terbaru dengan memilih Mulai > Pengaturan
 
 Cari Windows Powershell -> Run as administrator lalu Aktifkan Subsistem Windows untuk Linux dengan ketik command.
 
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
 dan aktifkan fitur Komputer Virtual dengan ketik command
 
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
 lalu restart Laptop
 
@@ -43,7 +43,7 @@ Klik Navbar (panah bawah) pilih Ubuntu. Atau bisa atur di pengaturan dengan meng
 
 Ketik Command di Windows Powershell
 
-ubuntu2004.exe config --default-user root
+    ubuntu2004.exe config --default-user root
 
 setelah itu tutup Ubuntu di windows terminal dan buka kembali Ubuntu untuk merefresh.
 
@@ -51,12 +51,12 @@ setelah itu tutup Ubuntu di windows terminal dan buka kembali Ubuntu untuk meref
 
 Install ZSH di Ubuntu dengan command
 
-apt install zsh
+    apt install zsh
 
 continue dengan Y.
 cari “ohmyzsh” di mesin pencarian Google, klik website nya dan copy-paste command
 
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 continue dengan y
 
@@ -69,19 +69,20 @@ Download font di google search (FiraCode Nerd Font) dan gunakan font untuk di te
 Pasang Plugin untuk zshnya
 Cari di google “oh my zsh autosuggestions” -> pilih yang di github(zsh-users) copy-paste
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-source ~/.zshrc
+    source ~/.zshrc
 
 Ubah config plugin dengan masuk nano nano ~/.zshrc , tambahkan zsh-autosuggestions pada plugin setelah (git) => (git zsh-autosuggestions). save config ctrl+X -> Y -> Enter.
 
-source ~/.zshrc
+    source ~/.zshrc
 
 buka juga “oh my zsh syntax-highlighting” di akun github yang sama (zsh-users) dan copy-paste
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-source ~/.zshrc.
+    source ~/.zshrc.
+
 Ubah config plugin dengan masuk nano nano ~/.zshrc , tambahkan zsh-syntax-highlighting pada plugin setelah (git zsh-autosuggestions) => (git zsh-autosuggestions zsh-syntax-highlighting). save config ctrl+X -> Y -> Enter.
 source ~/.zshrc.
 
@@ -91,19 +92,19 @@ Penginstallan WSL dan zsh telah selesai
 
 Selanjutnya penginstallan bahasa pemrograman yang akan digunakan. Pada perkuliahan kali ini menggunakan python. Ketik command
 
-apt install python3
+    apt install python3
 
-    Download extension Python dan extension code runner di VSCode, ubah beberapa pengaturan (checkbox) dan buka executor map edit in settings.json. dan ubah extensionnya python menjadi python3.
-    Tes Python
+Download extension Python dan extension code runner di VSCode, ubah beberapa pengaturan (checkbox) dan buka executor map edit in settings.json. dan ubah extensionnya python menjadi python3.
+Tes Python
 
 # Langkah 7 : Connect WSL Laptop dengan github
 
-    Buka Github, jika belum mempunyai akun github buat akun terlebih dahulu. Lalu buat SSH keys baru
+Buka Github, jika belum mempunyai akun github buat akun terlebih dahulu. Lalu buat SSH keys baru
 
 Settings => Access => SSH and GPG keys => New SSH keys
 Input command di Ubuntu (misal)
 
-ssh-keygen -t ed25519 -C "enggarlanang@gmail.com"
+    ssh-keygen -t ed25519 -C "enggarlanang@gmail.com"
 
 Wsl akan menggenerate public/private key pair. Masukkan passphrase 2x (yang kedua untuk konfirmasi) . lalu akan muncul pemberitahuan bahwa identifikasi berhasil bersamaan dengan key fingerprint.
 Selanjutnya input command pada baris yang bertuliskan
@@ -118,9 +119,12 @@ Inisialisasi Project di folder yang memuat keseluruhan project dalam hal ini say
 
 • Masuk Directory BahasaPemrograman di windows terminal(Ubuntu), kemudian buka VSC
 code .
+
 • mulai coding, save codingan ctrl+s dan run code ctrl+alt+n
 otomatis membuka terminal di bagian bawah VSC,
+
 • jika terminal belum muncul maka ke tab terminal > new terminal > dibawah kanan ada powershell biasanya dan ada panah bawah di samping tanda +, diklik lalu pilih ubuntu (wsl) / gitbash yang ada aja salah satunya. setelah semua sudah di save dan ready to deploy to github
+
 • inisialisasi project di direktori yang memuat keseluruhan project
 git init
 • add keseluruhan project yang ada di direktori tsb
