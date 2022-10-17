@@ -7,7 +7,7 @@
 3. Nested Loop
    Kombinasikan perulangan, dimana ada perulangan di dalam perulangan.
 
-## looping with range
+## Looping with range
 
 ## Looping with break
 
